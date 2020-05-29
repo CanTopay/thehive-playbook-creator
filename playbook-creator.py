@@ -13,7 +13,7 @@ def get_case_by_casenum(casenum):
     query = And(Eq('caseId', casenum))
     return hive_api.find_first(query=query)
 
-thehive_url="https://hnn-aab-3dctst.nl.eu.abnamro.com:9000"
+thehive_url="https://thehive.com:9000"
 thehive_token = keyring.get_password('hive_dev','can')
 
 # Connect to TheHive
