@@ -1,18 +1,11 @@
 {
     "PB:Initial Access": {
-
-        "Drive-by Compromise": {
+        "Default": {
             "Identification": [
                 "Triage (Initial - Automatic/Manual Assignment)",
-                "Investigate Logs,Flows and Alerts - FWs/Proxy/IDS-IPS/SSL Inspection",
-                "Threat Intel Query / Reputation Check - TI",
-                "User Enrichment and Analysis - AD/Directory Services/UEBA",
-                "System Enrichment - EP/EDR/CMDB/Vuln.Scanning",
                 "Inform User/Gather Information and Evidence"
             ],
             "Containment": [
-                "Block Application/Isolate Target System - EP/EDR",
-                "Block Attacker URL/IP/IP Segment - Proxy/FWs"
             ],
             "Eradication": [
                 "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
@@ -28,10 +21,27 @@
                 "Remarks for Improvement Points"
             ]
         },
-
+        "Drive-by Compromise": {
+            "Identification": [
+                "Investigate Logs,Flows and Alerts - FWs/Proxy/IDS-IPS/SSL Inspection",
+                "Threat Intel Query / Reputation Check - TI",
+                "User Enrichment and Analysis - AD/Directory Services/UEBA",
+                "System Enrichment - EP/EDR/CMDB/Vuln.Scanning",
+                "Inform User/Gather Information and Evidence"
+            ],
+            "Containment": [
+                "Block Application/Isolate Target System - EP/EDR",
+                "Block Attacker URL/IP/IP Segment - Proxy/FWs"
+            ],
+            "Eradication": [
+            ],
+            "Recovery": [
+            ],
+            "Lessons Learned": [
+            ]
+        },
         "Exploit Public-Facing Application": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - FWs/Proxy/WAF/IDS-IPS",
                 "Threat Intel Query / Reputation Check - TI",
                 "System Enrichment - EP/EDR/CMDB/Vuln.Scanning",
@@ -43,23 +53,14 @@
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Update Image/Update Policy - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5 W's and 1 H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "External Remote Services": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - AD/Directory Services/UEBA/FWs/IDS-IPS",
                 "Threat Intel Query / Reputation Check - TI",
                 "User Enrichment and Analysis - AD/Directory Services/UEBA",
@@ -71,23 +72,14 @@
                 "Blacklist/Whitelist Access List / Sources"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Update Image/Update Policy - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5 W's and 1 H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Hardware Additions": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - DHCP/FWs/Proxy",
                 "System Enrichment - EP/EDR/CMDB/Vuln.Scanning"
             ],
@@ -99,15 +91,10 @@
             ],
             "Recovery": [],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5 W's and 1 H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Replication Through Removable Media": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - EP/UEBA/FWs/Proxy/SSL Inspection",
                 "System Enrichment - EP/EDR/CMDB/Vuln.Scanning",
                 "Inform User/Gather Information and Evidence"
@@ -117,23 +104,14 @@
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Update Image/Update Policy - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5 W's and 1 H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Spearphishing Attachment": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - Email GW/EP/FWs/Proxy/IDS-IPS/SSL Inspection",
                 "Threat Intel Query / Investigate IOCs and Campaign",
                 "Sandbox Email and/or Attachment",
@@ -147,23 +125,14 @@
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Notify Users - Update User Awareness Platform - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Spearphishing Link": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - Email GW/EP/FWs/Proxy/SSL Inspection",
                 "Threat Intel Query / Investigate IOCs and Campaign",
                 "Sandbox Email and/or Attachment",
@@ -171,28 +140,20 @@
                 "Inform User/Gather Information and Evidence",
                 "System Enrichment - EP/EDR/CMDB/Vuln.Scanning"
             ],
-            "Containment": ["Block Attacker URL/IP/IP Segment - Proxy/FWs",
+            "Containment": [
+                "Block Attacker URL/IP/IP Segment - Proxy/FWs",
                 "Block Application/Isolate Target System - EP/EDR",
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Notify Users - Update User Awareness Platform - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Spearphishing via Service": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - FWs/Proxy/IDS-IPS/SSL Inspection",
                 "User Enrichment and Analysis - AD/Directory Services/UEBA",
                 "Inform User/Gather Information and Evidence",
@@ -206,23 +167,14 @@
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Notify Users - Update User Awareness Platform - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Supply Chain Compromise": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - FWs/WAF/Proxy/IDS-IPS/SSL Inspection/EP/UEBA",
                 "System Enrichment - EP/EDR/FIM/CMDB/Vuln.Scanning",
                 "Threat Intel Query / Investigate IOCs and Campaign",
@@ -233,23 +185,14 @@
                 "Reset Accounts,Token,Secret - AD/Directory Services/IAM-IDM/PIM/Keyvault"
             ],
             "Eradication": [
-                "Fix/Update System/Target Software(Or Re-Image and Update) - SM"
             ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Update Image/Update Policy - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         },
-
         "Trusted Relationship": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - AD/Directory Services/UEBA/FWs/IDS-IPS/VPN",
                 "User Enrichment and Analysis - AD/Directory Services/UEBA",
                 "Inform User/Gather Information and Evidence",
@@ -258,22 +201,15 @@
             "Containment": [
                 "Deactivate Account/Remove Access Permissions - AD/Directory Services/IAM-IDM/PIM"
             ],
-            "Eradication": [],
+            "Eradication": [
+            ],
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Notify Users - Update User Awareness Platform - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         },
-        
         "Valid Accounts": {
             "Identification": [
-                "Triage (Initial - Automatic/Manual Assignment)",
                 "Investigate Logs,Flows and Alerts - AD/Directory Services/UEBA/FWs/IDS-IPS/VPN",
                 "User Enrichment and Analysis - AD/Directory Services/UEBA",
                 "Inform User/Gather Information and Evidence",
@@ -283,19 +219,13 @@
             "Containment": [
                 "Reset Accounts,Token,Secret/Enforce MFA(If applicable) - AD/Directory Services/IAM-IDM/PIM/MFA"
             ],
-            "Eradication": []
+            "Eradication": [
+            ]
             ,
             "Recovery": [
-                "Watchlist Target Users/Systems - SIEM/UEBA",
-                "Hunt for IOCs - Data Lake",
-                "Notify Users - Update User Awareness Platform - SM"
             ],
             "Lessons Learned": [
-                "Update CSIRT Wiki(If Applicable)",
-                "Create Incident Report - 5W's and 1H",
-                "Remarks for Improvement Points"
             ]
         }
     }
 }
-\
