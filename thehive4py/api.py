@@ -8,7 +8,6 @@ import magic
 import os
 import warnings
 import json
-import magic
 import requests
 from requests.auth import AuthBase
 
