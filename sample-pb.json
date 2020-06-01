@@ -26,8 +26,7 @@
                 "Investigate Logs,Flows and Alerts - FWs/Proxy/IDS-IPS/SSL Inspection",
                 "Threat Intel Query / Reputation Check - TI",
                 "User Enrichment and Analysis - AD/Directory Services/UEBA",
-                "System Enrichment - EP/EDR/CMDB/Vuln.Scanning",
-                "Inform User/Gather Information and Evidence"
+                "System Enrichment - EP/EDR/CMDB/Vuln.Scanning"
             ],
             "Containment": [
                 "Block Application/Isolate Target System - EP/EDR",
