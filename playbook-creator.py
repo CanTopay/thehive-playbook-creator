@@ -2,8 +2,8 @@ import keyring
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 from thehive4py.api import TheHiveApi
-from thehive4py.models import CaseTask, CaseTaskLog
-from thehive4py.query import And, In, Not, Eq
+from thehive4py.models import CaseTask
+from thehive4py.query import And, Eq
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import json
