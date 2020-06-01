@@ -11,6 +11,8 @@ I used a json file to define and sort all playbook items/tasks in order. The top
 You will see the entries on theHive at the order that you wrote them into the json file. So keep the file in the order you like.
 And another benefit might be for devops approach; using this json based playbook with Git and dev pipelines, you can monitor and manage changes with your code branches and also apply for approvals before any push to your main branch - which is your SOP/Playbook.
 
+-- This script uses thehive4py from the official project repo; please obtain the most up2date version there: https://github.com/TheHive-Project/TheHive4py.git 
+
 # Json file
 ![Json in order](Screenshot-JsonFile.png)
 .
