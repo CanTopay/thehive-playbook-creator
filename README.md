@@ -12,7 +12,7 @@ You will see the entries on theHive at the order that you wrote them into the js
 And another benefit might be for devops approach; using this json based playbook with Git and dev pipelines, you can monitor and manage changes with your code branches and also apply for approvals before any push to your main branch - which is your SOP/Playbook.
 
 # Json file
-![Json in order](SScreenshot-JsonFile.png)
+![Json in order](Screenshot-JsonFile.png)
 .
 .
 .
