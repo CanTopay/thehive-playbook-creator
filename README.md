@@ -18,7 +18,7 @@ And another benefit might be for devops approach; using this json based playbook
 > This script uses thehive4py from the official project repo; please obtain the most up2date version there:
 > -[https://github.com/TheHive-Project/TheHive4py.git]
 
-# Json file
+# Json file - Mitre Playbook Sample in json
 ![Json in order](Screenshot-JsonFile.png)
 
 
